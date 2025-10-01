@@ -1,0 +1,161 @@
+.leaderboard-page {
+  padding: 2rem 0;
+}
+
+.leaderboard-header {
+  margin-bottom: 2rem;
+}
+
+.leaderboard-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.leaderboard-header p {
+  color: var(--text-secondary);
+}
+
+.leaderboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter-toggle input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.leaderboard-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--surface);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.leaderboard-row:hover {
+  transform: translateX(4px);
+}
+
+.rank-column {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+}
+
+.user-column {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.fullname {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.stats-column {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .leaderboard-page {
+    padding: 1rem 0;
+  }
+  
+  .leaderboard-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .leaderboard-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .period-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+  
+  .leaderboard-row {
+    grid-template-columns: 50px 1fr;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+  
+  .stats-column {
+    grid-column: 2;
+    gap: 1rem;
+  }
+  
+  .rank-column {
+    font-size: 1.5rem;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+}

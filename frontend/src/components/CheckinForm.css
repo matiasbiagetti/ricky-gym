@@ -1,0 +1,38 @@
+.checkin-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.photo-preview {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.photo-preview img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-preview .btn-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--danger);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.photo-preview .btn-remove:hover {
+  opacity: 0.9;
+}

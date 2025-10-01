@@ -1,0 +1,130 @@
+.profile-page {
+  padding: 2rem 0;
+}
+
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header h1 {
+  font-size: 2rem;
+}
+
+.profile-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-photo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+}
+
+.profile-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.profile-details {
+  text-align: center;
+  width: 100%;
+}
+
+.profile-details h2 {
+  margin-bottom: 0.5rem;
+}
+
+.profile-details p {
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.profile-details .email {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-item .stat-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item .stat-label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 1rem 0;
+  }
+  
+  .profile-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-photo,
+  .profile-photo-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-photo-placeholder {
+    font-size: 3rem;
+  }
+  
+  .stats-summary {
+    gap: 1rem;
+  }
+  
+  .stat-item .stat-value {
+    font-size: 2rem;
+  }
+}
